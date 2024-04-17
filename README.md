@@ -5,7 +5,7 @@ Este es un sitio web de portafolio personal totalmente responsivo, adaptable a t
 ### Website Preview
 <p align="center"> 
   <kbd>
-    <a href="https://varadbhogayata.github.io" target="_blank"><img src="examples/preview.gif">
+    <a href="https://varadbhogayata.github.io" target="_blank"><img src="/img/preview.avif">
   </a>
   </kbd>
 </p>
