@@ -1,5 +1,15 @@
+header{
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #0e1015;
+}
+
 .navbar{
-  padding: 10px 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #FFF;
+
   
   .navbar-container{
     width: 100%;
@@ -41,8 +51,8 @@
         left: 0;
         background-color: $primary;
         border-radius: 4px;
-        transition: all 0.5s;
-  
+        transition: all 0.3s;
+        
         &:nth-child(1){
           transform: translateY(-10px);
         }
@@ -136,7 +146,7 @@
   
       .get-touch-link{
         display: block;   
-        background-color: #24262f;
+        background-color: rgb(78, 82, 90);
         border-radius: 50%;
         width: 35px;
         height: 35px;
@@ -150,7 +160,7 @@
           @include mask-repeat(no-repeat);
           @include mask-position(center center);
         }
-  
+
         &:hover{
           opacity: 0.8;
         }

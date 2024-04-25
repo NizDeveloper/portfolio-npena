@@ -1,0 +1,45 @@
+.about{
+  padding: 180px 0px;
+
+  .about-row{
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-col{
+      .title{
+        color: $white;
+
+        h2{
+          // @include rem-2();
+        }
+      }
+
+      .text{
+        color: $tertiary;
+        @include adyacent-top(20px);
+      }
+    }
+
+    .skill-col{
+
+    }
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .about{
+    .about-row{
+      .about-col{
+        width: 50%;
+
+        .title{
+
+        }
+
+        .text{
+
+        }
+      }
+    }
+  }
+}

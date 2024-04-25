@@ -1,6 +1,6 @@
 # Personal portfolio - Níz Peña
 
-Este es un sitio web de portafolio personal totalmente responsivo, adaptable a todos los dispositivos, creado con HTML, CSS y JavaScript.
+This is a fully responsive personal portfolio website, adaptable to all devices, created with HTML, CSS, SCSS and JavaScript technologies and the bootstrap library.
 
 ### Website Preview
 <p align="center"> 
