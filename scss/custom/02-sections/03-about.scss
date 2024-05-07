@@ -21,7 +21,30 @@
     }
 
     .skill-col{
+      width: 100%;
 
+      .carousel-inner{
+        .carousel-item{
+          .carousel-title{
+
+          }
+
+          .icons-wrapper{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .icon-item{
+              padding: 0 5px;
+              width: 33%;
+
+              .icon-text{
+                color: $white;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -39,6 +62,10 @@
         .text{
 
         }
+      }
+
+      .skill-col{
+        width: 50%;
       }
     }
   }

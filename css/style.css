@@ -9946,9 +9946,22 @@ header {
       color: #93a2b5; }
       .about .about-row .about-col .text > * + * {
         margin-top: 20px; }
+    .about .about-row .skill-col {
+      width: 100%; }
+      .about .about-row .skill-col .carousel-inner .carousel-item .icons-wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; }
+        .about .about-row .skill-col .carousel-inner .carousel-item .icons-wrapper .icon-item {
+          padding: 0 5px;
+          width: 33%; }
+          .about .about-row .skill-col .carousel-inner .carousel-item .icons-wrapper .icon-item .icon-text {
+            color: #fff; }
 
 @media (min-width: 1024px) {
   .about .about-row .about-col {
+    width: 50%; }
+  .about .about-row .skill-col {
     width: 50%; } }
 
 /**
