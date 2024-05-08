@@ -10,7 +10,6 @@ header{
   border-radius: 20px;
   border: 1px solid #FFF;
 
-  
   .navbar-container{
     width: 100%;
     display: flex;
@@ -24,14 +23,14 @@ header{
         @include rem-2(16, 20);
         font-family: "Poppins", sans-serif;
         font-weight: 700;
-  
+
         span{
           color: $primary;
           @include rem(22);
         }
       }
     }
-    
+
     .menu-button{
       position: relative;
       background-color: $white;
@@ -43,7 +42,7 @@ header{
       background: transparent;
       border: none;
       overflow: hidden;
-  
+
       span{
         width: 17px;
         height: 2px;
@@ -52,25 +51,25 @@ header{
         background-color: $primary;
         border-radius: 4px;
         transition: all 0.3s;
-        
+
         &:nth-child(1){
           transform: translateY(-10px);
         }
-  
+
         &:nth-child(2){
           width: 25px;
         }
-  
+
         &:nth-child(3){
           transform: translateY(10px);
         }
-      } 
-  
+      }
+
       &:focus{
         box-shadow: none;
       }
     }
-  
+
     .menu-button.active{
       span{
         &:nth-child(1){
@@ -78,12 +77,12 @@ header{
           transform: translateY(0px) rotate(45deg);
           transition-delay: 0.125s;
         }
-  
+
         &:nth-child(2){
           transform: translateX(60px);
-          
+
         }
-  
+
         &:nth-child(3){
           width: 20px;
           transform: translateY(0px) rotate(315deg);
@@ -91,11 +90,11 @@ header{
         }
       }
     }
-  
+
     .navbar-links-container{
-      padding: 20px; 
+      padding: 20px;
       @include rem(22);
-      
+
       .navbar-nav{
         .nav-link{
           color: $tertiary;
@@ -111,7 +110,7 @@ header{
         }
       }
     }
-  
+
     .get-touch-link{
       display: none;
     }
@@ -124,12 +123,12 @@ header{
       .menu-button{
         display: none;
       }
-  
+
       .navbar-links-container{
-        padding: 0px; 
+        padding: 0px;
         @include rem(22);
         flex-grow: 0;
-        
+
         .navbar-nav{
           @include adyacent-left(20px);
 
@@ -145,7 +144,7 @@ header{
       }
 
       .get-touch-link{
-        display: block;   
+        display: block;
         background-color: rgb(78, 82, 90);
         border-radius: 50%;
         width: 35px;
