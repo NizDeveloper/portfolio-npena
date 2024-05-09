@@ -9834,8 +9834,7 @@ header {
       opacity: 0.8; } }
 
 .hero {
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding: 40px 0; }
   .hero .hero-row {
     display: flex;
     flex-wrap: wrap; }
@@ -9883,7 +9882,7 @@ header {
 
 @media (min-width: 768px) {
   .hero {
-    padding: 100px 0; }
+    padding: 155px 0; }
     .hero .hero-row {
       display: flex;
       align-items: center;
@@ -9918,6 +9917,16 @@ header {
           right: 41%;
           z-index: 1; } }
 
+@media (min-width: 1110px) {
+  .hero .hero-row .hero-text .hero-title p {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 125%; }
+  .hero .hero-row .hero-text .hero-title h1, .hero .hero-row .hero-text .hero-title .h1 {
+    font-size: 65px;
+    font-size: 4.0625rem;
+    line-height: 92.30769%; } }
+
 /*
  * Animations
  */
@@ -9936,32 +9945,33 @@ header {
     transform: scale(0.5); } }
 
 .about {
-  padding: 180px 0px; }
+  padding: 40px 0px; }
   .about .about-row {
     display: flex;
     flex-wrap: wrap; }
+    .about .about-row .about-col > * + * {
+      margin-top: 20px; }
     .about .about-row .about-col .title {
       color: #fff; }
+      .about .about-row .about-col .title h2, .about .about-row .about-col .title .h2 {
+        font-size: 35px;
+        font-size: 2.1875rem;
+        line-height: 105.71429%; }
     .about .about-row .about-col .text {
       color: #93a2b5; }
       .about .about-row .about-col .text > * + * {
         margin-top: 20px; }
-    .about .about-row .skill-col {
+    .about .about-row .experience-col {
       width: 100%; }
-      .about .about-row .skill-col .carousel-inner .carousel-item .icons-wrapper {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap; }
-        .about .about-row .skill-col .carousel-inner .carousel-item .icons-wrapper .icon-item {
-          padding: 0 5px;
-          width: 33%; }
-          .about .about-row .skill-col .carousel-inner .carousel-item .icons-wrapper .icon-item .icon-text {
-            color: #fff; }
 
 @media (min-width: 1024px) {
   .about .about-row .about-col {
     width: 50%; }
-  .about .about-row .skill-col {
+    .about .about-row .about-col .title h2, .about .about-row .about-col .title .h2 {
+      font-size: 40px;
+      font-size: 2.5rem;
+      line-height: 117.5%; }
+  .about .about-row .experience-col {
     width: 50%; } }
 
 /**
