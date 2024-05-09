@@ -1,16 +1,18 @@
 .about{
-  padding: 180px 0px;
+  padding: 40px 0px;
 
   .about-row{
     display: flex;
     flex-wrap: wrap;
 
     .about-col{
+      @include adyacent-top(20px);
+
       .title{
         color: $white;
 
         h2{
-          // @include rem-2();
+          @include rem-2(35, 37);
         }
       }
 
@@ -20,31 +22,8 @@
       }
     }
 
-    .skill-col{
+    .experience-col{
       width: 100%;
-
-      .carousel-inner{
-        .carousel-item{
-          .carousel-title{
-
-          }
-
-          .icons-wrapper{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-
-            .icon-item{
-              padding: 0 5px;
-              width: 33%;
-
-              .icon-text{
-                color: $white;
-              }
-            }
-          }
-        }
-      }
     }
   }
 }
@@ -56,7 +35,9 @@
         width: 50%;
 
         .title{
-
+          h2{
+            @include rem-2(40, 47);
+          }
         }
 
         .text{
@@ -64,7 +45,7 @@
         }
       }
 
-      .skill-col{
+      .experience-col{
         width: 50%;
       }
     }
