@@ -1,6 +1,5 @@
 .hero{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 40px 0;
 
   .hero-row{
     @include adyacent-top(30px);
@@ -9,32 +8,32 @@
 
     .hero-text{
       @include adyacent-top(20px);
-  
+
       .hero-title{
         @include adyacent-top(5px);
-  
+
         p{
           @include rem-2(22, 29);
           color: $tertiary;
           font-weight: 400;
         }
-  
+
         h1{
           @include rem-2(58, 58);
           font-weight: 700;
           color: $white;
-  
+
           span{
             color: #2cc9ff;
           }
         }
       }
-  
+
       .hero-paragraph{
         p{
           color: $tertiary;
           @include rem-2(18, 22);
-  
+
           span{
             text-decoration: underline;
             text-decoration-style: wavy;
@@ -42,17 +41,17 @@
           }
         }
       }
-  
+
       .container-buttons{
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
       }
     }
-  
+
     .hero-image{
       width: 100%;
-  
+
       .hero-container{
         .hero-border{
           width: 250px;
@@ -64,19 +63,17 @@
       }
     }
   }
-
 }
 
 @include media-breakpoint-up(md){
   .hero{
-    padding: 100px 0;
-    
+    padding: 155px 0;
+
     .hero-row{
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin: 0 -15px;
-
 
       .hero-text{
         order: 1;
@@ -84,13 +81,13 @@
         padding: 0 15px;
         margin: 0;
       }
-  
+
       .hero-image{
         order: 2;
         width: 40%;
         padding: 0 15px;
         position: relative;
-  
+
         .hero-container{
           .hero-border{
             width: 300px;
@@ -100,7 +97,7 @@
             animation: float 4s ease-in-out infinite;
             border-radius: 50%;
           }
-  
+
           .shadow{
             width: 75px;
             height: 20px;
@@ -116,7 +113,24 @@
         }
       }
     }
+  }
+}
 
+@include media-breakpoint-up(xl){
+  .hero{
+    .hero-row{
+      .hero-text{
+        .hero-title{
+          p{
+            @include rem-2(24, 30);
+          }
+
+          h1{
+            @include rem-2(65, 60);
+          }
+        }
+      }
+    }
   }
 }
 
@@ -133,7 +147,7 @@
   }
 }
 
-@keyframes expand{
+@keyframes expand {
   0%, 100% {
     transform: scale(1);
   } 50% {
