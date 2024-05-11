@@ -9834,7 +9834,10 @@ header {
       opacity: 0.8; } }
 
 .hero {
-  padding: 40px 0; }
+  padding: 50px 0;
+  height: 93vh;
+  display: flex;
+  align-items: center; }
   .hero .hero-row {
     display: flex;
     flex-wrap: wrap; }
@@ -9882,12 +9885,13 @@ header {
 
 @media (min-width: 768px) {
   .hero {
-    padding: 155px 0; }
+    padding: 40px 0; }
     .hero .hero-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin: 0 -15px; }
+      margin: 0 -15px;
+      transform: translateY(-15%); }
       .hero .hero-row .hero-text {
         order: 1;
         width: 60%;
@@ -9949,6 +9953,8 @@ header {
   .about .about-row {
     display: flex;
     flex-wrap: wrap; }
+    .about .about-row > * + * {
+      margin-top: 60px; }
     .about .about-row .about-col > * + * {
       margin-top: 20px; }
     .about .about-row .about-col .title {
@@ -9963,16 +9969,110 @@ header {
         margin-top: 20px; }
     .about .about-row .experience-col {
       width: 100%; }
+      .about .about-row .experience-col > * + * {
+        margin-top: 25px; }
+      .about .about-row .experience-col .title {
+        color: #fff;
+        position: relative;
+        display: inline-block; }
+        .about .about-row .experience-col .title h2, .about .about-row .experience-col .title .h2 {
+          font-size: 35px;
+          font-size: 2.1875rem;
+          line-height: 105.71429%; }
+        .about .about-row .experience-col .title::after {
+          content: "";
+          display: block;
+          height: 25px;
+          width: 25px;
+          fill: currentcolor;
+          background: #ffff00;
+          position: absolute;
+          top: 0;
+          right: -27px;
+          -webkit-mask-image: url("../img/icons/shine.svg");
+          mask-image: url("../img/icons/shine.svg");
+          -webkit-mask-size: 25px 25px;
+          mask-size: 25px 25px;
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-position: center center;
+          mask-position: center center; }
+      .about .about-row .experience-col .experience-container {
+        position: relative;
+        overflow: hidden; }
+        .about .about-row .experience-col .experience-container > * + * {
+          margin-top: 25px; }
+        .about .about-row .experience-col .experience-container .experience-wrapper {
+          display: flex;
+          justify-content: space-between; }
+          .about .about-row .experience-col .experience-container .experience-wrapper > * + * {
+            margin-left: 25px; }
+          .about .about-row .experience-col .experience-container .experience-wrapper .experience-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #4e525a;
+            color: #def3ff;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 3px; }
+            .about .about-row .experience-col .experience-container .experience-wrapper .experience-icon svg {
+              width: 15px;
+              height: 15px; }
+            .about .about-row .experience-col .experience-container .experience-wrapper .experience-icon::after {
+              content: "";
+              background-color: #334155;
+              width: 1px;
+              height: 1000%;
+              position: absolute;
+              display: block;
+              z-index: -1;
+              top: 0; }
+          .about .about-row .experience-col .experience-container .experience-wrapper .experience-content {
+            width: 92%;
+            display: inline-block; }
+            .about .about-row .experience-col .experience-container .experience-wrapper .experience-content .experience-title {
+              display: inline-block; }
+              .about .about-row .experience-col .experience-container .experience-wrapper .experience-content .experience-title .experience-title-position {
+                display: inline-block;
+                color: #2cc9ff;
+                font-size: 18px;
+                font-size: 1.125rem;
+                line-height: 155.55556%; }
+              .about .about-row .experience-col .experience-container .experience-wrapper .experience-content .experience-title .experience-title-separator {
+                color: #fff; }
+              .about .about-row .experience-col .experience-container .experience-wrapper .experience-content .experience-title .experience-title-company {
+                color: #ffb272e6;
+                font-size: 14px;
+                font-size: 0.875rem;
+                line-height: 142.85714%; }
+            .about .about-row .experience-col .experience-container .experience-wrapper .experience-content .experience-time {
+              margin-top: 10px;
+              color: #b6eaffe6; }
+            .about .about-row .experience-col .experience-container .experience-wrapper .experience-content .experience-description {
+              margin-top: 15px;
+              color: #fff; }
 
 @media (min-width: 1024px) {
-  .about .about-row .about-col {
-    width: 50%; }
-    .about .about-row .about-col .title h2, .about .about-row .about-col .title .h2 {
-      font-size: 40px;
-      font-size: 2.5rem;
-      line-height: 117.5%; }
-  .about .about-row .experience-col {
-    width: 50%; } }
+  .about .about-row {
+    margin: 0 -15px; }
+    .about .about-row > * {
+      padding: 0 15px; }
+    .about .about-row .about-col {
+      width: 50%; }
+      .about .about-row .about-col .title h2, .about .about-row .about-col .title .h2 {
+        font-size: 40px;
+        font-size: 2.5rem;
+        line-height: 117.5%; }
+    .about .about-row .experience-col {
+      width: 50%;
+      margin: 0; }
+      .about .about-row .experience-col .title h2, .about .about-row .experience-col .title .h2 {
+        font-size: 40px;
+        font-size: 2.5rem;
+        line-height: 117.5%; } }
 
 /**
  * Regions.
@@ -10116,4 +10216,3 @@ a {
   font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
-
